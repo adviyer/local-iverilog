@@ -68,6 +68,8 @@ vvp ./Testbench.out
 
 As the `TOP_LEVEL_MODULE` is not a testbench, no tests are run.
 
+`make clean` removes all .out files.
+
 ### (Optional) Useful VS Code Extensions
 The following VS Code Extensions might be useful:
 
