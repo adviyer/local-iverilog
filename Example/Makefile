@@ -2,19 +2,19 @@
 # Change SOURCES, TESTBENCH, TOP_LEVEL_MODULE, and TOP_EXECUTABLE to match your project
 
 # Should include all the source files
-SOURCES ?= 
+SOURCES ?= MAJ.v Majority.v
 
 # Should include the testbench file
-TESTBENCH ?= 
+TESTBENCH ?= Testbench.v
 
 # Name of the top level module \
   If this is a testbench, the corresponding testbench file should be included in TESTBENCH. \
   The tests described in the testbench module will be run if 'make sim' is called. \
   If this is a non-testbench module, no tests will be run.
-TOP_LEVEL_MODULE ?= 
+TOP_LEVEL_MODULE ?= Majority
 
 # Name of the top level executable (.out extension automatically appended)
-TOP_EXECUTABLE ?= 
+TOP_EXECUTABLE ?= Testbench
 
 # Default target
 all: $(TOP_EXECUTABLE)

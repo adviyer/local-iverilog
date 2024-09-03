@@ -4,7 +4,8 @@ module Testbench();
     reg [2:0] SW;
     wire [0:0] LEDG;
 
-    MAJ M(.a(SW[2]), .b(SW[1]), .c(SW[0]), .m(LEDG[0]));
+    // dut stands for 'Device Under Test', and is a common term used in design verification
+    MAJ dut(.a(SW[2]), .b(SW[1]), .c(SW[0]), .m(LEDG[0]));
 
     task check_majority();
     begin
@@ -33,7 +34,7 @@ module Testbench();
         check_majority();
         SW = 3'b111; #5;
         check_majority();
-        $display("Testbench finished");
+        $display("Tests Passed!!!");
         $finish;
     end
 endmodule
