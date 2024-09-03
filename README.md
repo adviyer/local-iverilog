@@ -21,13 +21,13 @@ And, more importantly, *it isn't Quartus Prime \:)*
 If you don't have an SSH key set up to access Github, you would need to refer to [this tutorial](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
 2. If you don't have Icarus Verilog installed, refer to [this guide](https://steveicarus.github.io/iverilog/usage/installation.html).
 3. Create a new folder with your Verilog files. 
-4. Copy the provided Makefile into your folder.
+4. Copy the provided `Makefile` into your folder.
 
 Great! Now, read the next couple of sections to figure out where you should add your source and testbench .v files to compile and simulate Verilog code locally!
 
 An example has been provided to illustrate this process.
 ### Variables
-The provided Makefile has the following variables:
+The provided `Makefile` has the following variables:
 
 `SOURCES`: source .v files
 
