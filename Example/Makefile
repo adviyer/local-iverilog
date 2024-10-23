@@ -11,7 +11,7 @@ TESTBENCH ?= Testbench.v
   If this is a testbench, the corresponding testbench file should be included in TESTBENCH. \
   The tests described in the testbench module will be run if 'make sim' is called. \
   If this is a non-testbench module, no tests will be run.
-TOP_LEVEL_MODULE ?= Majority
+TOP_LEVEL_MODULE ?= Testbench
 
 # Name of the top level executable (.out extension automatically appended)
 TOP_EXECUTABLE ?= Testbench
